@@ -198,6 +198,7 @@ p.nav {
 article {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: rgb(255, 255, 255);
     width: 32.7%;
     padding-left: 15px;
@@ -218,60 +219,113 @@ article h6 {
 #skateboarders-container {
     display: grid;
     height: 400px;
+    width: 800px;
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr;
-    grid-gap: 8px;
+    grid-gap: 7.615px;
     margin-top: 20px;
+    position: relative;
 }
 
-#skateboarders-container img {
+#skateboarders-container div.skateboarder {
     border: 3px solid rgb(255, 255, 255);
 }
 
-#lance {
-    width: 261px;
-    grid-area: 1 / 1 / span 1 / span 1;
-}
-
-#lance img {
-    width: 261px;
-}
-
-#rodney {
-    width: 261px;
-    grid-area: 1 / 2 / span 1 / span 1;
-}
-
-#rodney img {
-    width: 261px;
-}
-
-#steve {
-/*     width: 528px;
- */    grid-area: 2 / 1 / span 1 / span 2;
-}
-
-#steve img {
-    width: 528px;
-}
-
-#tommy {
-    width: 256px;
-    grid-area: 1 / 3 / span 2 / span 1;
-}
-
-#tommy img {
-    width: auto;
-    height: 440px;
-}
-
-#lance img, #rodney img, #steve img, #tommy img {
-    
+.skateboarder p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
 #lance, #rodney, #steve, #tommy {
-    width: 256px;
-    height: auto;
+    position: relative;
+}
+
+#lance {
+    background-image: url("/Users/austinmarler/Projects/assign4-3-14-19/Sk8er-site/assets/sk8er-4.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#lance p {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+#rodney {
+    background-image: url("/Users/austinmarler/Projects/assign4-3-14-19/Sk8er-site/assets/sk8er-3.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+#rodney p {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+#steve {
+    background-image: url("/Users/austinmarler/Projects/assign4-3-14-19/Sk8er-site/assets/sk8er-1.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+#steve p {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+
+#tommy {
+    background-image: url("/Users/austinmarler/Projects/assign4-3-14-19/Sk8er-site/assets/sk8er-2.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 275%;
+    grid-area: 1 / 3 / span 2 / span 1;
+}
+
+#tommy p {
+    position: absolute;
+    top: 135px;
+}
+
+#flag1 p {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.sk8-flag-1 {
+    position: absolute;
+    left: -185px;
+    top: 50px;
+    width: 160px;
+    height: 50px;
+    background-color: rgb(178, 43, 50);
+    filter: drop-shadow(3px 3px 3px rgba(160, 160, 160, .8));
+}
+
+.sk8-flag-2 {
+    position: absolute;
+    left: -25px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 20px solid rgb(178, 43, 50);
+    border-bottom: 25px solid transparent;
+    filter: drop-shadow(1px 2px 1px rgba(160, 160, 160, .8));
 }
 
 /* Skateboard Showcase Styles */
