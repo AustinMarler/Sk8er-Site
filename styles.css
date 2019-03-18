@@ -19,7 +19,7 @@ html {
 /* Main Styles */
 body {
     /* Linear-gradient code taken from: https://stackoverflow.com/questions/31632419/how-to-darken-a-css-background-image */
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/Users/austinmarler/Projects/assign4-3-14-19/Sk8er-site/assets/bg.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/bg.jpg");
     font-family: 'Gill Sans', Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
@@ -129,7 +129,7 @@ p.nav {
 }
 
 #header-img-box {
-    background-image: url("/Users/austinmarler/Projects/assign4-3-14-19/Sk8er-site/assets/grid.png");
+    background-image: url("/assets/grid.png");
     height: 300px;
     border: 5px solid rgb(255, 255, 255);
     overflow: hidden;
@@ -225,7 +225,7 @@ article h6 {
 }
 
 #lance {
-    background-image: url("/Users/austinmarler/Projects/assign4-3-14-19/Sk8er-site/assets/sk8er-4.png");
+    background-image: url("/assets/sk8er-4.png");
     background-position: right top;
     background-repeat: no-repeat;
     background-size: 150%;
